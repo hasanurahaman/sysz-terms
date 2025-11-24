@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions — SysZ</title>
+    <meta name="description"
+        content="Terms and Conditions for SysZ - Free, ad-free utility tools. Learn about our service terms, intellectual property rights, and user responsibilities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --light-bg: #f8f9ff;
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --card-border: rgba(102, 126, 234, 0.15);
+            --text-primary: #1a1a2e;
+            --text-secondary: rgba(26, 26, 46, 0.75);
+            --text-muted: rgba(26, 26, 46, 0.5);
+            --highlight-bg: rgba(102, 126, 234, 0.08);
+            --highlight-border: rgba(102, 126, 234, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--light-bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .gradient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.2;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            top: -250px;
+            left: -250px;
+            animation-delay: 0s;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            bottom: -200px;
+            right: -200px;
+            animation-delay: 5s;
+        }
+
+        .orb-3 {
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            top: 50%;
+            right: 10%;
+            animation-delay: 10s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-30px, 30px) scale(0.9);
+            }
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 2rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.5));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 30px rgba(118, 75, 162, 0.7));
+            }
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            backdrop-filter: blur(10px);
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+        }
+
+        /* Content Card */
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 3rem;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 48px rgba(102, 126, 234, 0.25);
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            padding: 2rem;
+            background: var(--highlight-bg);
+            border: 1px solid var(--highlight-border);
+            border-radius: 16px;
+            margin-bottom: 3rem;
+        }
+
+        .intro-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .intro-section p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        /* Section Styling */
+        .terms-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .terms-section:last-child {
+            border-bottom: none;
+        }
+
+        .terms-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gradient);
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            color: white;
+        }
+
+        .terms-section p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .terms-section ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .terms-section ul li {
+            color: var(--text-secondary);
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .terms-section ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(102, 126, 234, 0.08);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            margin-top: 3rem;
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-email {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .terms-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .orb-1,
+            .orb-2,
+            .orb-3 {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection Style */
+        ::selection {
+            background: rgba(102, 126, 234, 0.3);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SysZ</div>
+        <div class="tagline">Free, Ad-Free Utility Tools</div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Terms & Conditions</h1>
+        <div class="last-updated">Last Updated: 24th November, 2025</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-card">
+            <!-- Introduction -->
+            <div class="intro-section">
+                <h2>Introduction</h2>
+                <p>These Terms & Conditions ("Terms") govern your use of SysZ ("we", "our", "us") and all tools and
+                    utilities hosted under our domain and subdomains.</p>
+                <p style="margin-top: 1rem;"><strong>By using SysZ, you agree to follow these Terms.</strong></p>
+            </div>
+
+            <!-- Section 1: Use of Our Tools -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">1</span>
+                    Use of Our Tools
+                </h2>
+                <p>SysZ provides free, ad-free utility tools designed to make your life easier. When using our platform,
+                    please note:</p>
+                <ul>
+                    <li>Tools are provided "as is" without warranties of any kind</li>
+                    <li>You may not misuse the platform or attempt unauthorized access</li>
+                    <li>You must comply with all applicable laws while using SysZ</li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Intellectual Property -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">2</span>
+                    Intellectual Property Rights
+                </h2>
+                <p>All code, UI/UX design, and content on SysZ belong to us unless otherwise noted.</p>
+
+                <p style="margin-top: 1.5rem; font-weight: 600; color: var(--text-primary);">You may not:</p>
+                <ul>
+                    <li>Copy or redistribute our tools</li>
+                    <li>Reverse engineer or clone the platform</li>
+                    <li>Sell our tools or services</li>
+                </ul>
+
+                <p style="margin-top: 1.5rem; font-weight: 600; color: var(--text-primary);">However, users may:</p>
+                <ul>
+                    <li>Use the tools freely for personal or commercial purposes</li>
+                    <li>Request new features or improvements</li>
+                    <li>Suggest new tools to be added</li>
+                    <li>Support us through donations (optional)</li>
+                </ul>
+            </section>
+
+            <!-- Section 3: User Uploads -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">3</span>
+                    User Responsibilities and Upload Rules
+                </h2>
+                <p>Some tools may require file uploads for processing. By uploading files, you agree that:</p>
+                <ul>
+                    <li>You own the rights to the files you upload</li>
+                    <li>Your uploads do not violate any law or copyright</li>
+                    <li>We can temporarily process your files solely to provide the tool's functionality</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p>🔒 Privacy Guarantee: Files are automatically deleted after processing. We do not store, share,
+                        or access your uploaded content.</p>
+                </div>
+            </section>
+
+            <!-- Section 4: Prohibited Activities -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">4</span>
+                    Prohibited Activities
+                </h2>
+                <p>To maintain a safe and reliable platform for everyone, you agree not to:</p>
+                <ul>
+                    <li>Upload harmful, malicious, or illegal files</li>
+                    <li>Use SysZ for illegal purposes or activities</li>
+                    <li>Abuse our free services (e.g., automated scraping, excessive load)</li>
+                    <li>Attempt to disrupt, damage, or compromise the platform</li>
+                </ul>
+            </section>
+
+            <!-- Section 5: Disclaimer -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">5</span>
+                    Disclaimers and Limitations of Liability
+                </h2>
+                <p>SysZ is a free platform provided for your convenience. Please understand that:</p>
+                <ul>
+                    <li>We do not guarantee uninterrupted or error-free service</li>
+                    <li>We are not responsible for data loss or corruption</li>
+                    <li>We are not liable for any damages arising from using our tools</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p>⚠️ Use at your own risk. Always maintain backups of important files.</p>
+                </div>
+            </section>
+
+            <!-- Section 6: Modifications -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">6</span>
+                    Modifications to Tools or Services
+                </h2>
+                <p>We reserve the right to modify, update, or discontinue any tool, feature, or service at any time
+                    without prior notice. We strive to continuously improve our platform and may make changes to enhance
+                    user experience.</p>
+            </section>
+
+            <!-- Section 7: Governing Law -->
+            <section class="terms-section">
+                <h2>
+                    <span class="section-number">7</span>
+                    Governing Law
+                </h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes
+                    arising from these Terms or your use of SysZ shall be subject to the exclusive jurisdiction of the
+                    courts in India.</p>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Contact Information</h2>
+            <p>Have questions about these Terms & Conditions?<br>We're here to help!</p>
+            <a href="mailto:support@sysz.me" class="contact-email">support@sysz.me</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SysZ. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
